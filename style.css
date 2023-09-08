@@ -233,28 +233,32 @@ a {
     margin-top: 80px;
 }
 
-.services_card .card_one{
+.services_card .card_one {
     padding: 60px 80px;
-    background: linear-gradient(83deg, rgba(243,156,18,1) 32%, rgba(230,126,34,1) 92%);
+    background: linear-gradient(83deg, rgba(243, 156, 18, 1) 32%, rgba(230, 126, 34, 1) 92%);
     border-radius: 5px;
 }
-.services_card .card_two{
+
+.services_card .card_two {
     padding: 60px 80px;
-    background: linear-gradient(83deg, rgba(125,95,255,1) 32%, rgba(113,88,226,1) 92%);
+    background: linear-gradient(83deg, rgba(125, 95, 255, 1) 32%, rgba(113, 88, 226, 1) 92%);
     border-radius: 5px;
 }
-.services_card .card i{
+
+.services_card .card i {
     color: #fff;
     font-size: 50px;
     margin-bottom: 10px;
 }
-.services_card .card h1{
+
+.services_card .card h1 {
     color: #fff;
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.services_card .card p{
+
+.services_card .card p {
     color: #fff;
     font-size: 16px;
     font-weight: 400;
@@ -350,6 +354,7 @@ a {
     .about_me .about_button {
         text-align: center;
     }
+
     .services_part .services_card {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
