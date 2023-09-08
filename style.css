@@ -30,8 +30,18 @@ a {
     width: 1030px;
     margin: 0 auto;
 }
-.clear{
+
+.clear {
     clear: both;
+}
+
+.undrline {
+    width: 200px;
+    height: 3px;
+    background: #FEB633;
+    margin: 5px 0px;
+    margin: 0 auto;
+    border: none;
 }
 
 /* ------------------- Basic css end -------------------- */
@@ -42,9 +52,9 @@ a {
 }
 
 #hero .main_manu {
-   position: sticky;
-   top: 0;
-   background: #2B2C2C;
+    /* position: sticky;
+    top: 0; */
+    background: #2B2C2C;
     width: 100%;
     height: 80px;
     display: flex;
@@ -98,28 +108,32 @@ a {
     width: 100%;
 }
 
-#hero .hero_body{
+#hero .hero_body {
     margin-top: 50px;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
 }
-.hero_body .hero_titel{
+
+.hero_body .hero_titel {
     padding: 100px 0px;
 }
-.hero_body .hero_titel h1{
+
+.hero_body .hero_titel h1 {
     font-size: 70px;
     color: #FFFFFF;
     font-weight: 600;
 }
-.hero_body .hero_titel p{
+
+.hero_body .hero_titel p {
     font-size: 23px;
     color: #CCCCCC;
     font-weight: 400;
     margin-bottom: 60px;
 }
-.button_one{
+
+.button_one {
     display: inline-block;
     text-decoration: none;
     text-align: center;
@@ -133,35 +147,149 @@ a {
     border-radius: 5px;
     transition: all linear .5s;
 }
-.button_one:hover{
+
+.button_one:hover {
     background: transparent;
     width: 230px;
     height: 65px;
     line-height: 65px;
-    border:2px solid #FEB633;
+    border: 2px solid #FEB633;
     border-radius: 4px;
     color: #FEB633;
 }
 
-.hero_body .hero_photo{
+.hero_body .hero_photo {
     justify-items: right;
 }
 
 
 
-.hero_body .hero_photo img{
+.hero_body .hero_photo img {
     width: 100%;
-    
+
 }
 
 /* --------------------- main manu part end --------------------- */
+/* -- ------------ About Part Start---------- -- */
+#about {
+    background: #303131;
+    padding: 120px 0px;
+}
+
+#about .about_me {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#about .about_me .about_title h1 {
+    color: #CCCCCC;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#about .about_me .about_text p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #9F9F9F;
+    text-align: justify;
+}
+
+.about_button {
+    margin-top: 30px;
+}
+
+/* -- ------------ About Part End---------- -- */
+/* -- ------------ Services Part Start---------- -- */
+#services {
+    background: #2B2C2C;
+    padding: 100px 0px;
+}
+
+#services .services_title {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.services_part .services_title h1 {
+    color: #CCCCCC;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.services_part .services_title p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #9F9F9F;
+    text-align: center;
+
+}
+
+.services_part .services_card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    margin-top: 80px;
+}
+
+.services_card .card_one{
+    padding: 60px 80px;
+    background: linear-gradient(83deg, rgba(243,156,18,1) 32%, rgba(230,126,34,1) 92%);
+    border-radius: 5px;
+}
+.services_card .card_two{
+    padding: 60px 80px;
+    background: linear-gradient(83deg, rgba(125,95,255,1) 32%, rgba(113,88,226,1) 92%);
+    border-radius: 5px;
+}
+.services_card .card i{
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.services_card .card h1{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.services_card .card p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* -- ------------ Services Part End---------- -- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 @media only screen and (max-width: 768px) {
-    .container {
-        width: 0px;
+    body .container {
+        width: 100%;
+        padding: 0px 10px;
         /* margin: 0 auto; */
     }
 
@@ -211,5 +339,21 @@ a {
 
     .hero_body .hero_photo img {
         width: 100%;
+    }
+
+    #about .about_me {
+        padding: 50px 0px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about_me .about_button {
+        text-align: center;
+    }
+    .services_part .services_card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+        margin-top: 80px;
     }
 }
