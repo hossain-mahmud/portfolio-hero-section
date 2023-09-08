@@ -361,6 +361,13 @@ a {
         row-gap: 30px;
         margin-top: 80px;
     }
+    .services_card .card_one {
+      padding: 20px;
+    }
+    
+    .services_card .card_two {
+     padding: 20px;
+    }
 
 
 }
