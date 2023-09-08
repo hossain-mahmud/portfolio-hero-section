@@ -1,0 +1,215 @@
+/* =================== fonts part start =============== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* -------------------------- fonts part end -------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container img {
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.container {
+    width: 1030px;
+    margin: 0 auto;
+}
+.clear{
+    clear: both;
+}
+
+/* ------------------- Basic css end -------------------- */
+/* ============== main Manu pert Start ============ */
+#hero {
+    width: 100%;
+    background: #2B2C2C;
+}
+
+#hero .main_manu {
+   position: sticky;
+   top: 0;
+   background: #2B2C2C;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main_manu .hero_logo h1 {
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.main_manu .hero_logo h1 span {
+    color: #FEB633;
+}
+
+.main_manu .fa-bars {
+    display: none;
+}
+
+.main_manu .nav_items ul {
+    display: flex;
+    gap: 30px;
+}
+
+.main_manu .nav_items ul li a {
+    color: 14px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.main_manu .nav_items ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #FEB633;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: all linear .4s;
+}
+
+.main_manu .nav_items ul li a:hover {
+    color: #FEB633;
+}
+
+.main_manu .nav_items ul li a:hover::after {
+    width: 100%;
+}
+
+#hero .hero_body{
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+}
+.hero_body .hero_titel{
+    padding: 100px 0px;
+}
+.hero_body .hero_titel h1{
+    font-size: 70px;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+.hero_body .hero_titel p{
+    font-size: 23px;
+    color: #CCCCCC;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+.button_one{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    width: 230px;
+    height: 65px;
+    line-height: 65px;
+    color: #fff;
+    background: #FEB633;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: all linear .5s;
+}
+.button_one:hover{
+    background: transparent;
+    width: 230px;
+    height: 65px;
+    line-height: 65px;
+    border:2px solid #FEB633;
+    border-radius: 4px;
+    color: #FEB633;
+}
+
+.hero_body .hero_photo{
+    justify-items: right;
+}
+
+
+
+.hero_body .hero_photo img{
+    width: 100%;
+    
+}
+
+/* --------------------- main manu part end --------------------- */
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 0px;
+        /* margin: 0 auto; */
+    }
+
+    .main_manu .fa-bars {
+        display: block;
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .main_manu .nav_items ul {
+        display: block;
+    }
+
+    .nav_items {
+        position: absolute;
+        top: 80px;
+        width: 100%;
+        background: #222;
+        display: none;
+    }
+
+    .main_manu .nav_items ul li {
+        margin: 10px 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main_manu .nav_items ul li a {
+        color: #fff;
+        text-align: center;
+    }
+
+    .active {
+        display: block;
+    }
+
+    #hero .hero_body {
+        margin-top: 30px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .hero_body .hero_titel {
+        padding: 50px 0px;
+        text-align: center;
+
+    }
+
+    .hero_body .hero_photo img {
+        width: 100%;
+    }
+}
